@@ -1,0 +1,4 @@
+#!/usr/bin/zsh
+packagename=$(apt-cache search $@|peco)
+packagenamestr=$(echo $packagename | awk '{print $1}')
+echo $packagenamestr
